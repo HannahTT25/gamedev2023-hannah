@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Hannah's Page Title</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #472731;
+  color: #ddd;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+  .navbar {
+  overflow: hidden;
+  background-color: #282130;
+  }
+    .navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  }
+      .navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+  
+</style>
+</head>
+<body>
+  
+
+<div class="header">
+  <h1>Hannah's Basic Webpage</h1>
+  <p>Version 0.0.1-11</p>
+</div>
+<div class="navbar">
+  <a href="https://hannahtt25.github.io/gamedev2022/public/">Back To My Index Page</a>
+  <a href="https://hannahtt25.github.io/gamedev2022/public/t1a03-forms-fred.html">Link To My Next Assignment</a>
+  <a href="#">Testing</a>
+  <a href="#" class="right">Testing</a>
+</div>
+  <h2>This is an image</h2>
+    <h5>Here's a smiley face for you :)</h5><br>
+<img width=250 src="https://ih1.redbubble.net/image.632620338.3562/raf,750x1000,075,t,fafafa:ca443f4786.jpg"><br><br>  
+  <hr>
+  
+  
+    <div class="mymain">
+    <h2>Here's a Youtube Video</h2>
+    <h5>World's smallest cat 🐈- BBC</h5>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/W86cTIoMv2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+      <hr>
+      <div>This is a </div>
+      <div>div</div>
+      <span> This is </span>
+      <span> a span</span>
+      
+      <h3> Write about Ellis' 10 main areas of coding: </h3><br>
+ <p>Div is at the bottom for all output code</p>     
+<br>
+<input type=button value="0. Pseudo Code" onclick="{
+    document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
+    }">
+    <br><hr><br>
+    <input type=button value="1. Input/Output" onclick="{
+    document.getElementById('myDiv01').innerHTML = 'Input adffgdsfsgsdfdfg<br>' +'sdfg<br>sdfg<br>output is...'
+    }">
+<br><hr><br>
+
+<input type=button value="2. Variables" onclick="{
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+    }"><br>
+    <input id="myText01" type=text value="Hey, what's up?" ><br><hr><br>
+
+<input type=button value="3. Loops" onclick="{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+    let myMax = parseInt(document.getElementById('myNum01').value)
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+    if (myLoop * 2 > myMax){
+    myTemp+= ' cool '
+    }
+    myTemp += 'Loop number: ' + myLoop + '<br>'
+    }
+    document.getElementById('myDiv01').innerHTML = myTemp
+    }"><br>
+<input id="myNum01" type=number value="4" >
+<br><hr><br>
+<input type=button value="4. Decisions" onclick="{
+   document.getElementById('myDiv01').innerHTML = `
+   Decisions use the if statement to make true false variable decisions<br>
+   <pre>
+   if (hour < 18) {
+   greeting = \'Good day\';
+   }
+   </pre>
+   `}"><br>
+<hr><br>
+<script>
+function myExampleFunction(){
+let myIn01 = parseInt(document.getElementById('myText03').value)
+let mySum = myIn01 + myIn01
+let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+return myReply
+}
+</script>
+<input type=button value="5. Functions" onClick="{
+        document.getElementById('myDiv01').innerHTML = myExampleFunction()
+        }"><br>
+<input type=text id="myText03" value="8">
+<hr><br>
+<input type=text id="myText04" value="12"><br>
+<input type=button value="6. Events" onClick="{
+        document.getElementById('myDiv01').innerHTML=document.getElementById('myText04').value
+        }">
+<br><hr>
+<input type=text id="myText05" value="3"><br>
+
+<input type=button value="7. Arrays" onClick="{
+      let myTemp = document.getElementById('myText05').value
+      let mySum= ''
+      document.getElementById('myDiv01').innerHTML = ' '
+      myArray = new Array()
+      myArray[0] = 'Riley'
+      myArray[1] = 'John'
+      myArray[2] = 'Zoe'
+      for(let myLoop=0; myLoop < myTemp; myLoop++){
+      mySum += 'Loop #:' + myLoop + ' array entry: ' + myArray[myLoop] + '<br>'
+      }
+      document.getElementById('myDiv01').innerHTML = mySum
+      }"><br><hr>
+
+<input type=button value="8. Objects" onclick="{
+    let myPerson = {
+    'firstName' : 'Kyle',
+    'lastName' : 'Santos',
+    'age' : 18,
+    'eyeColor' : 'brown',
+    }
+    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
+    document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'lastName: ' + myPerson.lastName + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>'  
+    }"><br><hr>
+<input type=button value="9. Classes" onClick="{
+    class myHuman {
+    constructor(passName, passAge) {
+    this.myName = passName
+    this.myAge = passAge
+    }
+    myShow(){
+    document.getElementById('myDiv01').innerHTML = 'Hello, '+ this.myName + '. You are ' + this.myAge + ' years old! Happy Birthday :)<br>'
+    }                                                                           } // end class myHuman
+    myFriend = new myHuman('Harry', 16)
+    myFriend.myShow()
+    }"><br><hr>
+<div id="myDiv01">...</div>
+
+<br>
+You do 2:Variables, 3:Loops, 5:Functions, 6:Events, 7:Arrays, 8:Objects, 9:Classes<br>
+
+<body>
+  </html>
+  
+     
