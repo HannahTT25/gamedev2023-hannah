@@ -9,8 +9,8 @@ body {
 .header {
   padding: 50px;
   text-align: center;
-  background: #F5DADF;
-  color: #e59eab;
+  background: #E2C6EB;
+  color: #d0a0de;
 }
 
 .header h1 {
@@ -18,7 +18,7 @@ body {
 }
   .navbar {
   overflow: hidden;
-  background-color: #e59eab;
+  background-color: #d0a0de;
   }
     .navbar a {
   float: right;
@@ -30,7 +30,10 @@ body {
   }
       .navbar a:hover {
   background-color: #ddd;
-  color: #da7688;
+  color: #d0a0de;
+  }
+  h2 {
+    color: #29202C;
   }
   
 </style>
@@ -40,7 +43,7 @@ body {
 
 <div class="header">
   <h1>Hannah's Basic Webpage</h1>
-  <p>Version 0.0.1-12</p>
+  <p>Version 0.0.1-17</p>
 </div>
 <div class="navbar">
   <a href="https://hannahtt25.github.io/gamedev2023-hannah/public/">Back To My Index Page</a>
@@ -48,15 +51,15 @@ body {
   <a href="#">Testing</a>
   <a href="#" class="right">Testing</a>
 </div>
-  <h2>This is an image</h2>
-    <h5>Here's a smiley face for you :)</h5><br>
-<img width=250 src="https://ih1.redbubble.net/image.632620338.3562/raf,750x1000,075,t,fafafa:ca443f4786.jpg"><br><br>  
+  <h2>What is Melatonin?</h2>
+    <h5>Melatonin is a rhythm game that features an electronic music soundtrack and fast-paced gameplay. Players must hit the right buttons in time with the music, and as they progress through levels, the difficulty increases. The game is known for its vibrant visuals and immersive soundtrack that creates a unique experience for players. With its addictive gameplay and challenging levels, Melatonin is a must-try for fans of rhythm games.</h5><br>
+<img width=500 src="https://cdn.cloudflare.steamstatic.com/steam/apps/1585220/ss_264c0320b771ea4d002f765dec9b60f9367368a6.1920x1080.jpg?t=1673291010"><br><br>  
   <hr>
   
   
     <div class="mymain">
     <h2>Here's a Youtube Video</h2>
-    <h5>World's smallest cat 🐈- BBC</h5>
+    <h5>Melatonin - Official Reveal Trailer</h5>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3jlqqhXBVEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <br>
       <hr>
@@ -65,112 +68,121 @@ body {
       <span> This is </span>
       <span> a span</span>
       
-      <h3> Write about Ellis' 10 main areas of coding: </h3><br>
- <p>Div is at the bottom for all output code</p>     
-<br>
-<input type=button value="0. Pseudo Code" onclick="{
-    document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
-    }">
-    <br><hr><br>
-    <input type=button value="1. Input/Output" onclick="{
-    document.getElementById('myDiv01').innerHTML = 'Input adffgdsfsgsdfdfg<br>' +'sdfg<br>sdfg<br>output is...'
-    }">
-<br><hr><br>
-
-<input type=button value="2. Variables" onclick="{
-    let myIn01 = document.getElementById('myText01').value
-    document.getElementById('myDiv01').innerHTML = myIn01
-    }"><br>
-    <input id="myText01" type=text value="Hey, what's up?" ><br><hr><br>
-
-<input type=button value="3. Loops" onclick="{
-    document.getElementById('myDiv01').innerHTML = ''
-    let myTemp = ''
-    let myMax = parseInt(document.getElementById('myNum01').value)
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-    if (myLoop * 2 > myMax){
-    myTemp+= ' cool '
-    }
-    myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp
-    }"><br>
-<input id="myNum01" type=number value="4" >
-<br><hr><br>
-<input type=button value="4. Decisions" onclick="{
-   document.getElementById('myDiv01').innerHTML = `
-   Decisions use the if statement to make true false variable decisions<br>
-   <pre>
-   if (hour < 18) {
-   greeting = \'Good day\';
-   }
-   </pre>
-   `}"><br>
-<hr><br>
-<script>
-function myExampleFunction(){
-let myIn01 = parseInt(document.getElementById('myText03').value)
-let mySum = myIn01 + myIn01
-let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
-return myReply
-}
-</script>
-<input type=button value="5. Functions" onClick="{
-        document.getElementById('myDiv01').innerHTML = myExampleFunction()
-        }"><br>
-<input type=text id="myText03" value="8">
-<hr><br>
-<input type=text id="myText04" value="12"><br>
-<input type=button value="6. Events" onClick="{
-        document.getElementById('myDiv01').innerHTML=document.getElementById('myText04').value
+       <h3> Write about Ellis' 10 main areas of coding</h3>
+        
+        <input type=button value="0. Pseudo Code" onclick="{
+           document.getElementById('myDiv01').innerHTML = 'Hello don\'t world'
         }">
-<br><hr>
-<input type=text id="myText05" value="3"><br>
 
-<input type=button value="7. Arrays" onClick="{
-      let myTemp = document.getElementById('myText05').value
-      let mySum= ''
-      document.getElementById('myDiv01').innerHTML = ' '
-      myArray = new Array()
-      myArray[0] = 'Riley'
-      myArray[1] = 'John'
-      myArray[2] = 'Zoe'
-      for(let myLoop=0; myLoop < myTemp; myLoop++){
-      mySum += 'Loop #:' + myLoop + ' array entry: ' + myArray[myLoop] + '<br>'
-      }
-      document.getElementById('myDiv01').innerHTML = mySum
-      }"><br><hr>
+         <input type=button value="1. Variables" onclick="{
+           document.getElementById('myDiv01').innerHTML = `
+           Variables<br>
+           <pre>Variables store stuff. It is a “named storage” for data.<br>
+   x = 5;
+   y = 6;
+   console.log(x + y);
+11
+           </pre>
+        `}">
 
-<input type=button value="8. Objects" onclick="{
-    let myPerson = {
-    'firstName' : 'Kyle',
-    'lastName' : 'Santos',
-    'age' : 18,
-    'eyeColor' : 'brown',
-    }
-    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
-    document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
-    document.getElementById('myDiv01').innerHTML += 'lastName: ' + myPerson.lastName + '<br>'
-    document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>'
-    document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>'  
-    }"><br><hr>
-<input type=button value="9. Classes" onClick="{
-    class myHuman {
-    constructor(passName, passAge) {
-    this.myName = passName
-    this.myAge = passAge
-    }
-    myShow(){
-    document.getElementById('myDiv01').innerHTML = 'Hello, '+ this.myName + '. You are ' + this.myAge + ' years old! Happy Birthday :)<br>'
-    }                                                                           } // end class myHuman
-    myFriend = new myHuman('Harry', 16)
-    myFriend.myShow()
-    }"><br><hr>
-<div id="myDiv01">...</div>
+        <input type=button value="2. Input/Output" onclick="{
+           document.getElementById('myDiv01').innerHTML = 'Input<br><br>Input is giving data while output is the receving the data.<br><br>Input adffgdsfsgsdfdfh<br>' + 'sdfg<br>sdfg<br>output is...'
+        }">
+        
+       <input type=button value="3. Decisions" onclick="{
+           document.getElementById('myDiv01').innerHTML = `
+           Decisions use the if statement to make true
+           false variable decisions<br>
+           <pre>
+   if(hour < 18) {
+       greeting = \'Good day\';
+   }
+           </pre>
+        `}">
 
-<br>
-You do 2:Variables, 3:Loops, 5:Functions, 6:Events, 7:Arrays, 8:Objects, 9:Classes<br>
+      <input type=button value="4. Events" onclick='{
+           document.getElementById(`myDiv01`).innerHTML = `
+           Events<br>
+           <pre>Events activate code<br>
+element.addEventListener("click", doWhatIAsked);
+           </pre>
+        `}'>
 
-<body>
-  </html>
-  
+        <input type=button value="5. Objects" onclick='{
+           document.getElementById(`myDiv01`).innerHTML = `
+           Objects<br>
+           <pre> Objects are named variables<br>
+   myObject = {
+       name : "hannah",
+       object : "mangoes",
+       favcolour : "pink",
+       age : "16",
+       eyecolour : "brown",                                                
+   };
+   console.log(myObject.object);
+   console.log(myObject.favcolour);
+"mangoes"
+"pink"
+           </pre>
+        `}'>
+
+
+<input type=button value="6. Functions" onclick='{
+           document.getElementById(`myDiv01`).innerHTML = `
+           Functions<br>
+           <pre> Functions are named chunks of code to make it easier to understand<br>
+  function myFunction(p1, p2) {
+  return p1 * p2;
+}
+           </pre>
+        `}'>
+
+        
+        <input type=button value="3. Loops" onclick='{
+           document.getElementById(`myDiv01`).innerHTML = `
+           Loops<br>
+           <pre>Loops are used to perform repeated tasks based on a condition. Conditions typically return true or false. A loop will continue running until the defined condition returns false.
+                                                                                                   
+  let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("myDiv01").innerHTML = text;
+           </pre>
+        `}'>
+        
+ <input type=button value="7. Arrays" onclick='{
+           document.getElementById(`myDiv01`).innerHTML = `
+           Arrays<br>
+           <pre> An array is an object that can store multiple values under one variable.<br>
+   myArray = {"Pink", "Blue", "Purple", "Orange"};
+   console.log(myArray[0]);
+   console.log(myArray[3]);
+"Pink"
+"Purple"
+           </pre>
+        `}'>
+              
+        
+       
+        
+        <input type=button value="9. Classes" onclick="{
+           document.getElementById('myDiv01').innerHTML = `
+           Classes<br>
+           <pre>
+Classes provide template for creating objects, which can bind code into data. They're just special functions.<br>
+         class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }                                           
+           </pre>
+        `}">
+        <br>
+        
+<h3>Output here</h3>
+        <div id="myDiv01">...</div>
+    </body>
+</html>
