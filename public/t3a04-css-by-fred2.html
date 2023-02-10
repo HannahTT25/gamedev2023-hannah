@@ -1,0 +1,110 @@
+<style>
+  body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, #FF7F50,#D8BFD8); 
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+    color :linear-gradient(to right, #FF7F50,#D8BFD8)
+}
+
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+</style>
+<body id="gradient">
+
+    <h1>CSS Website</h1>
+  <h2>Background Generator</h2>
+  <h2>Choose Colours for Background here</h2>
+    <input type="color" class="color1"   value="#FF7F50">
+    <input type="color" class="color2"  value="#D8BFD8">
+    <h3></h3>
+    <script>
+	var css= document.querySelector("h3");
+    var color1 = document.querySelector(".color1");
+    var color2 = document.querySelector(".color2");
+    var body = document.getElementById("gradient");
+    
+    
+    color1.addEventListener("input",function(){
+        console.log(color1.value);
+        body.style.background ="linear-gradient(to right,"+color1.value+", "+color2.value+")";
+        css.textContent = body.style.background;
+    });
+    color2.addEventListener("input",function(){
+        body.style.background ="linear-gradient(to right,"+color1.value+", "+color2.value+")"; 
+        css.textContent = body.style.background;
+    });
+  
+	
+	</script>
+</body>
+<body>
+  Version 0.0.1-13</br>
+<hr>
+<br>Reference Link
+<a href="https://www.w3schools.com/cssref/default.asp"><br>w3schools</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">clip path website</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists">css text styling</a><br>
+<hr>
+<p style="color:white;">Properly done with a .css file listing all css commands for your website<br>
+Another way to do CSS <Cascading Style Sheets: determine colors locations extra effects on the tags on your website)</p><br>
+
+Here is typical in document style
+<pre>
+b {
+color: #00ff00;
+}
+</pre><br>
+<hr>
+I do CSS inside the tag. It overpowers all other methods<br>
+
+<b > This is bold<b/><br>
+  <b id ="myB1" style="color:#00ff00; background-Color:blue; "> This is bold</b>
+  <input type=button value=Change onclick="{
+document.getElementById('myB1').style.color = 'white'
+document.getElementById('myB1').style.backgroundColor = 'black'
+}"><br>
+                                           
+<textarea style="position:relative; left:0; top:0; width:200; height:50; ">
+                                                                          Advanced see if you move this textarea
+</textarea><br>
+  <hr>
+  <h2>Extra: I wanted to try making a nice login webpage using html, css and javascript</h2>
+  <button id="myButton">To see the webpage please click this button</button>
+  <style>
+    #myButton {
+  background-color: white;
+  color: black;
+  font: 900 1em 'Raleway', sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  </style>
+  <script>
+    document.getElementById("myButton").addEventListener("click", function() {
+  window.location.href = "t1a04-css-by-hannahextra.html";
+});
+  </script>
+</body>
+</html>
+<hr>
