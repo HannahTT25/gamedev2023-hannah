@@ -277,4 +277,66 @@ document.getById('myDiv01').innerHTML = 'It went right'
 
 
 <br> 
+<br>
+    <h2>Another table but this time using javascript</h2>
+    
+    <table id="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Occupation</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+  </tbody>
+</table>
+    <style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #848484;
+}
+    </style>
+    <script>
+    const tableBody = document.getElementById("tableBody");
+
+const data = [
+  { name: "Mandy", age: 32, occupation: "Developer" },
+  { name: "Kale", age: 26, occupation: "Designer" },
+  { name: "Pauline", age: 35, occupation: "Manager" }
+];
+
+// Loop through the data and add each row to the table
+for (const person of data) {
+  const row = document.createElement("tr");
+  
+  const nameCell = document.createElement("td");
+  nameCell.innerText = person.name;
+  row.appendChild(nameCell);
+  
+  const ageCell = document.createElement("td");
+  ageCell.innerText = person.age;
+  row.appendChild(ageCell);
+  
+  const occupationCell = document.createElement("td");
+  occupationCell.innerText = person.occupation;
+  row.appendChild(occupationCell);
+  
+  tableBody.appendChild(row);
+}
+    </script>
+    </html>
+    
+    
+    
+    
