@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input/Output</title>
+    <title>Document</title>
 </head>
 <body>
 <style>
@@ -40,8 +40,8 @@ a {
     font-weight: bold;
   }
 </style>
-<h5>Version 0.1.2-17</h5>
-<h2 align="center">t3a05-input output by Fred</h2>
+<h5>Version 0.1.2-19</h5>
+<h2 align="center">t1a05-input output by Fred</h2>
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input output Javascript innerHTML value by Fred (Click on the text to go to the link)</a>
 <hr>
 <h4>Example input output code</h4>
@@ -52,7 +52,7 @@ document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*m
 <hr>
 <h4>Example working code</h4>
 <input id="myNum01" type="number" value="4"><br>
-<input type="button" value="myEvent squares" onclick="{
+<input type="button" value="Squared" onclick="{
  let myIn01 = parseFloat(document.getElementById('myNum01').value)
  let myAnswer = myIn01 * myIn01
  document.getElementById('myDiv01').innerHTML = 
@@ -67,14 +67,28 @@ document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*m
 
 <div id="myDiv123">...</div><br>
 <hr>
-  <h1>Input Text and Make The Text Change</h1>
-  <h2></h2>
-  <p id="myChange1" onclick="myFunction()">Click me to change!</p>
-  <script>
-    function myFunction() {
-      document.getElementById("myChange1").innerHTML = "Magic!";
-    }
-  </script>
+ <input id="myNum02" type="number" value="8"><br>
+<input type="button" value="Division" onclick="{
+ let myIn02 = parseFloat(document.getElementById('myNum02').value)
+ let myAnswer01 = myIn02 / 2
+ document.getElementById('myDiv02').innerHTML = 
+   myIn02 + ' divided by 2 = ' + myAnswer01
+}"><br>
+  <div id="myDiv02">...</div><br>
+<hr>
+  <input type="text" id="myTextIn1" value="5" size="30"> + <input type="text" id="myTextIn2" value="6.89" size="20"> 
+  <input id="myButton124" type="button" value="Add the numbers" onclick="{
+   var my1 = document.getElementById('myTextIn1').value  
+   var my2 = document.getElementById('myTextIn2').value  
+   document.getElementById('myDiv03').innerHTML =   'Numbers stringed ' +  my1 + ' + ' +  my2 + ' = ' +  (my1 + my2)  + '<br>'   
+   document.getElementById('myDiv03').innerHTML +=  'Numbers as integers ' +  my1 + ' + ' +  my2 + ' = ' +  (parseInt(my1) + parseInt(my2))  + '<br>'   
+   document.getElementById('myDiv03').innerHTML +=  'Numbers rounded ' +  my1 + ' + ' +  my2 + ' = ' +  (Math.round(my1) + Math.round(my2))  + '<br>'                                                      
+   document.getElementById('myDiv03').innerHTML +=  'Numbers added with decimals included ' +  my1 + ' + ' +  my2 + ' = ' +  (parseFloat(my1) + parseFloat(my2))  + '<br>'                                                                                              
+                                                             
+                                                              
+}"><br><br>
+
+<div id='myDiv03'>...</div><br>
 </body>
 <b>Scale Testing: Input numbers to get results</b>
 </html> 
