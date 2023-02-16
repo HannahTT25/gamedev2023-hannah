@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
 <style>
 a:hover {
   color: #e5f1f5;
@@ -35,11 +34,12 @@ a {
   a {
     font-family: Calibri, sans-serif;
   }
-  #myDiv01, #myDiv123 {
+  #myDiv01, #myDiv123, #myDiv01, #myDiv02, #myDiv03, #myDiv04 {
     font-family: Tahoma, sans-serif;
     font-weight: bold;
   }
 </style>
+  <body>
 <h5>Version 0.1.2-19</h5>
 <h2 align="center">t1a05-input output by Fred</h2>
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input output Javascript innerHTML value by Fred (Click on the text to go to the link)</a>
@@ -89,7 +89,20 @@ document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*m
 }"><br><br>
 
 <div id='myDiv03'>...</div><br>
-</body>
+    <hr>
+  <input type="text" id="myTextIn3" value="9.32" size="30"> - <input type="text" id="myTextIn4" value="8.35" size="20"> 
+  <input id="myButton125" type="button" value="Subtract the numbers" onclick="{
+   var my3 = document.getElementById('myTextIn3').value  
+   var my4 = document.getElementById('myTextIn4').value  
+   document.getElementById('myDiv04').innerHTML =   'Numbers stringed ' +  my3 + ' + ' +  my4 + ' = ' +  (my3 + my4)  + '<br>'   
+   document.getElementById('myDiv04').innerHTML +=  'Numbers as integers ' +  my3 + ' - ' +  my4 + ' = ' +  (parseInt(my3) - parseInt(my4))  + '<br>'   
+   document.getElementById('myDiv04').innerHTML +=  'Numbers rounded ' +  my3 + ' - ' +  my4 + ' = ' +  (Math.round(my3) - Math.round(my4))  + '<br>'                                                      
+   document.getElementById('myDiv04').innerHTML +=  'Numbers added with decimals included ' +  my3 + ' + ' +  my4 + ' = ' +  (parseFloat(my3) - parseFloat(my4))  + '<br>'                                                                                              
+                                                             
+                                                              
+}"><br><br>
+
+<div id='myDiv04'>...</div><br>
 <b>Scale Testing: Input numbers to get results</b>
 </html> 
 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
@@ -97,3 +110,4 @@ document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*m
   <input type="number" id="a" name="a" value="10" /> =
   <output name="result" for="a b">50</output>
 </form>
+  </body>
