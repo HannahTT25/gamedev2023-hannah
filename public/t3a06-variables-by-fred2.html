@@ -1,0 +1,185 @@
+<html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #c8c8c8;
+    }
+    
+    a:hover {
+        color: #efefef;
+    }
+    
+    pre {
+        background-color: #eee;
+        padding: 10px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="button"] {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="button"]:hover {
+        background-color: #eee;
+        cursor: pointer;
+    }
+    
+    #myDiv01,
+    #Div2,
+    #Div3,
+    #Div4,
+    #Div5,
+    #Div6,
+    #Div7 {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    hr {
+        margin: 30px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+    }
+</style>
+Version 0.0.1-5
+
+<head>
+    <title>t3a06-variables-by-fred.html</title>
+</head> 
+<body>
+<h2 align=center>t1a06-variables-by-fred.html</h2>
+
+<a href="https://hannahtt25.github.io/gamedev2023-hannah/public/">Link back to Index</a><br>
+
+<a href="https://www.w3schools.com/js/js_variables.asp">You Fix: Good reference to Variables in Javascript 
+and other languages</a><br>
+
+Other Languages use: bool, int, float, char, string, 
+int_8, int_16 etc<br>
+
+Note: Javascript does use var and let for local variables.<br>
+For Global variables Mr. Ellis prefers to use document.myVarName
+
+
+<h4> Example input output code</h4>
+<pre>
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01 
+</pre>
+
+<h4> Example working code</h4>
+
+<input id="myText01" type=text value="The dog " ><br> 
+
+<input type=button value="Show Variable" onclick="{
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+}"><br>
+
+<input type=button value="Using no variable" onclick="{
+   document.getElementById('myDiv01').innerHTML = 
+       document.getElementById('myText01').value
+}"><br>
+
+<div id="myDiv01">...</div>
+
+<hr> 
+
+<h4>Number squared </h4> 
+
+<input type=number id="Num1" value="1" > 
+<input type=button value="click here" onClick="{ 
+                                               let myIn02 = parseFloat(document.getElementById('Num1').value) ;
+                                               let myAnswer = myIn02 * myIn02
+                                               document.getElementById('Div2').innerHTML = myIn02 + ' times ' + myIn02 + ' = ' + myAnswer ; 
+                                               }">
+
+<div id="Div2"> </div> 
+
+<hr> 
+
+<h4> Text input</h4> 
+
+<input type=text id="Text2" value="Example"  >
+<input type=button value="Click here" onClick="{
+                                                let myIn03 = document.getElementById('Text2').value ; 
+                                                document.getElementById('Div3').innerHTML = 'You have written ' + myIn03 ;
+                                               }"> 
+
+<div id="Div3" > </div> 
+
+<hr> 
+
+<h4>Add the numbers </h4> 
+
+<input type=number id="Num2" value="4" >
+<input type=number id="Num3" value="3" >
+
+<input type=button value="click here" onclick="{
+                                           let x = document.getElementById('Num2').value
+                                           let y = document.getElementById('Num3').value
+                                           let myAnswer = x + y
+                                           document.getElementById('Div4').innerHTML = myAnswer 
+                                           }">
+<div id="Div4"> </div>
+
+<hr> 
+
+<h4> Subtract the numbers </h4> 
+
+<input type=text id="Text3" value="First name" >
+<input type=text id="Text4" value="Last name" >
+<input type=button value="add names" onclick="{
+                                              let fname = document.getElementById('Text3').value
+                                              let nname = document.getElementById('Text4').value
+                                              let myAnswer = fname + ' ' + nname 
+                                              document.getElementById('Div5').innerHTML = myAnswer
+                                              }">
+
+<div id="Div5"> </div>
+
+<hr>
+
+<h4> Divide the numbers</h4> 
+
+<input type=number id="Num4" value="3">
+<input type=number id="Num5" value="2">
+<input type=button value="divide" onclick="{
+                                           let x = document.getElementById('Num2').value
+                                           let y = document.getElementById('Num3').value
+                                           let myAnswer = x/y
+                                           document.getElementById('Div6').innerHTML = myAnswer 
+                                           }">
+<div id="Div6"> </div>
+<hr>
+
+<h4> Rounds the variable down and removes any decimals </h4> 
+
+<input type=number id="Num6" value="5.977">
+<input type=button value="round down" onclick="{
+                                               let x = parseInt(document.getElementById('Num6').value)
+                                               let myAnswer= x
+                                               document.getElementById('Div7').innerHTML = myAnswer
+                                               }">
+
+<div id="Div7" > </div>
+
+<hr>
+</body>
+</html>
